@@ -1,16 +1,13 @@
 import React from 'react'
-
-import Investment from './Investment';
 import AdBanner from './AdBanner';
+import Investment from './Investment';
 
 
 function PortfolioPage() {
     return (
         <div >
-            <Investment />
-            <AdBanner />
-        
-
+            <Investment/>
+            <AdBanner /> 
 
         </div>
     )
