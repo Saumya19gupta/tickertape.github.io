@@ -2,7 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import img from "/src/img/Gold.webp"
+// import img from "/src/img/Gold.webp"
+
+import Gold1 from "/src/img/Gold.webp"
 
 export default function DigitalGold() {
   return (
@@ -57,8 +59,8 @@ export default function DigitalGold() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.img
-            src="/gold-illustration.png"
+          {/* <motion.img
+            src= "/gold-illustration.png"
             alt="Digital Gold"
             className="w-full max-w-md"
             animate={{ y: [0, -10, 0] }}
@@ -67,7 +69,10 @@ export default function DigitalGold() {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-          />
+          /> */}
+
+          
+           <img src = {Gold1} alt = "Phone UI" className = "w-full drop-shadow-lg" />
         </motion.div>
       </div>
 

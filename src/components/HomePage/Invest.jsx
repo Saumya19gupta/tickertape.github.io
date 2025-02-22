@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaChartLine, FaUsers, FaCalculator } from "react-icons/fa";
+import ici from "/src/img/iciciAdBanner.jpg"
 
 const investments = [
   { icon: <FaChartLine className="text-lg text-yellow-500" />, text: "Connect multiple demat accounts in one go" },
@@ -17,7 +18,8 @@ export default function Invest() {
   return (
     <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
       <motion.div
-        className="p-6 bg-white rounded-lg shadow-lg"
+        // className="p-6 bg-white rounded-lg shadow-lg"
+        className="p-4 bg-gray-900 rounded-lg shadow"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -54,13 +56,16 @@ export default function Invest() {
         transition={{ duration: 0.5 }}
       >
         <div className="relative overflow-hidden rounded-lg shadow-lg">
-          <motion.img
+          {/* <motion.img
             src={ads[0].src}
             alt="Ad"
             className="w-full object-cover rounded-lg"
             animate={{ opacity: [0, 1], x: [50, 0] }}
             transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
-          />
+          /> */}
+
+          <img src = {ici} alt = "Phone UI" className = "w-full drop-shadow-lg" />  
+
         </div>
       </motion.div>
     </div>

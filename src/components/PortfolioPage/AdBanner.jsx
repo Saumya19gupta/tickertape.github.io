@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { motion } from "framer-motion";
+// import kotak from "/src/img/kotak.png"
+// import logoSRTR from "/src/logo/SRTR.png";
 
 const AdBanner = () => {
   return (
@@ -29,11 +31,13 @@ const AdBanner = () => {
       </motion.a>
 
       {/* Logo */}
-      <img
+      {/* <img
         src="/assets/kotak-logo.png"  
         alt="Kotak Securities"
         className="h-8 md:h-10 ml-3"
-      />
+      /> */}
+
+      {/* <img src = {kotak} alt = "Phone UI" className = "w-full drop-shadow-lg" />  */}
     </motion.div>
   );
 };

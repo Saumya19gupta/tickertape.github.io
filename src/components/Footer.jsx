@@ -1,11 +1,12 @@
 import React from "react";
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 px-6">
+    <footer className="bg-gray-900 text-white text-3xl py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {/* Left Section */}
         <div>
-          <img src="/BJAJ.png" alt="Tickertape Logo" className="w-32" />
+          {/* <img src="/BJAJ.png" alt="Tickertape Logo" className="w-32" /> */}
+          <img src="/logopage.svg" alt="Tickertape Logo" className="w-32" />
           <p className="text-sm text-gray-400 mt-2">from <span className="text-white font-bold">smallcase</span></p>
           <p className="text-sm text-gray-400 mt-4">
             Tickertape provides data, information & content for Indian stocks, mutual funds, ETFs & indices.

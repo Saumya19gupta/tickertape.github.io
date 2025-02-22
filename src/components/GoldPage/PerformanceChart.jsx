@@ -51,15 +51,16 @@ export default function PerformanceChart() {
 
         {/* Investment Calculator */}
         <motion.div
-          className="bg-white shadow-lg rounded-lg p-6 mt-6 max-w-md mx-auto"
+          // className="bg-white shadow-lg rounded-lg p-6 mt-6 max-w-md mx-auto"
+          className="bg-gray-900 shadow-lg rounded-lg p-6 mt-6 max-w-md mx-auto"  
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">Calculate & Decide</h3>
+          <h2 className="text-xl font-semibold text-white mb-4">Calculate & Decide</h2>
 
           {/* Investment Amount */}
-          <label className="block text-gray-600 text-sm mb-2">Investment amount (₹)</label>
+          <label className="block text-white text-sm mb-2">Investment amount (₹)</label>
           <input
             type="number"
             value={investment}
@@ -74,7 +75,7 @@ export default function PerformanceChart() {
                 key={freq}
                 onClick={() => setFrequency(freq)}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition ${
-                  frequency === freq ? "bg-blue-500 text-white" : "bg-gray-200"
+                  frequency === freq ? "bg-blue-500 text-black" : "bg-gray-200"
                 }`}
               >
                 {freq}
@@ -83,11 +84,12 @@ export default function PerformanceChart() {
           </div>
 
           {/* Investment Period */}
-          <label className="block text-gray-600 text-sm mb-2">Investment period (years)</label>
+          <label className="block text-white text-sm mb-2">Investment period (years)</label>
           <div className="flex items-center">
             <button
               onClick={() => setYears((prev) => Math.max(1, prev - 1))}
-              className="px-3 py-1 bg-gray-200 rounded-l-md"
+              // className="px-3 py-1 bg-gray-200 rounded-l-md"
+              className="px-3 py-1 bg-gray-600 rounded-l-md"
             >
               -
             </button>
@@ -107,6 +109,7 @@ export default function PerformanceChart() {
 
           {/* Projected Value */}
           <motion.div
+            // className="mt-4 p-4 bg-gray-100 rounded-lg text-center"
             className="mt-4 p-4 bg-gray-100 rounded-lg text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -121,7 +124,7 @@ export default function PerformanceChart() {
 
           {/* Invest Now Button */}
           <motion.button
-            className="mt-4 w-full bg-black text-white py-3 rounded-md font-semibold shadow-lg hover:bg-gray-800 transition"
+            className="mt-4 w-full bg-gray-600 text-white py-3 rounded-md font-semibold shadow-lg hover:bg-gray-800 transition"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

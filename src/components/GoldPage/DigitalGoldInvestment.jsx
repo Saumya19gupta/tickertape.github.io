@@ -261,7 +261,9 @@ const DigitalGoldInvestment = () => {
           </div>
 
           {/* Calculator Fields */}
-          <div className="flex justify-between items-center p-3 bg-white shadow-sm rounded-md mt-3">
+          {/* <div className="flex justify-between items-center p-3 bg-white shadow-sm rounded-md mt-3"> */}
+          <div className="flex justify-between items-center p-3 bg-gray-900 shadow-sm rounded-md mt-3">
+
             <input
               type="number"
               value={amount}
@@ -269,7 +271,8 @@ const DigitalGoldInvestment = () => {
               placeholder="Buy in Rupees"
               className="w-1/2 p-2 border rounded-md"
             />
-            <span className="text-gray-600">⇄</span>
+            {/* <span className="text-gray-600">⇄</span> */}
+            <span className="text-white">⇄</span>
             <input
               type="number"
               value={grams}

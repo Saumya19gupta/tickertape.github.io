@@ -125,7 +125,7 @@ export default function MutualFunds() {
     <div className="max-w-5xl mx-auto p-6">
       {/* Heading Section */}
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl text-black font-semibold">Mutual Funds and ETFs</h2>
+        <h1 className="text-x4 text-black font-semibold">Mutual Funds and ETFs</h1>
         <a href="#" className="text-blue-500 hover:underline">
           1Y Return ↗
         </a>

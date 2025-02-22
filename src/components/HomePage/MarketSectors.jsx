@@ -15,8 +15,13 @@ const marketData = [
 
 const MarketSectors = () => {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-6 bg-white ">
-      <div className="flex justify-between items-center mb-4">
+    // <div className="w-full max-w-6xl mx-auto px-4 py-6 bg-white ">
+      <div className="w-full max-w-6xl mx-auto px-8 py-12 bg-white">
+        
+      <div className="flex justify-between items-center mb-6">
+
+
+        {/* <h1 className="text-3xl font-semibold text-gray-800">Market and Sectors</h1> */}
         <h1 className="text-3xl font-semibold text-gray-800">Market and Sectors</h1>
         <a href="/market-sectors" className="text-blue-600 text-sm font-medium hover:underline">
           See All

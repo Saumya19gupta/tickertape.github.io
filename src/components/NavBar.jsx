@@ -11,6 +11,30 @@ const stockData = [
     { name: 'RELIANCE', price: '1,227.50', change: '+0.17%', isUp: true },
     { name: 'SBIN', price: '730.70', change: '+0.65%', isUp: true },
     { name: 'TCS', price: '3,792.00', change: '-2.10%', isUp: false },
+
+    
+        
+        { name: 'Infosys', price: '1,660.50', change: '+1.25%', isUp: true },
+        { name: 'Dr. Reddy\'s', price: '5,850.00', change: '+0.75%', isUp: true },
+        { name: 'BHEL', price: '142.65', change: '-1.20%', isUp: false },
+        { name: 'Hero MotoCorp', price: '3,725.50', change: '+2.15%', isUp: true },
+        
+        
+        { name: 'HDFC Bank', price: '1,450.80', change: '+0.95%', isUp: true },
+        { name: 'Wipro', price: '565.30', change: '-1.45%', isUp: false },
+        { name: 'HCL Tech', price: '1,452.20', change: '+2.10%', isUp: true },
+        { name: 'ICICI Bank', price: '1,175.65', change: '+0.85%', isUp: true },
+        { name: 'Axis Bank', price: '1,110.40', change: '-0.55%', isUp: false },
+        { name: 'Tata Motors', price: '925.15', change: '+1.30%', isUp: true },
+        { name: 'L&T', price: '3,550.10', change: '-1.05%', isUp: false },
+        { name: 'Bajaj Finance', price: '7,225.00', change: '+0.45%', isUp: true },
+        { name: 'NTPC', price: '321.80', change: '-0.25%', isUp: false },
+        { name: 'PowerGrid', price: '267.40', change: '+0.65%', isUp: true },
+        { name: 'SBI', price: '605.30', change: '+1.75%', isUp: true },
+        { name: 'Maruti Suzuki', price: '11,850.00', change: '-0.95%', isUp: false }
+        
+       
+        
 ];
 function NavBar({ searchQuery, setSearchQuery }) {
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -43,7 +67,8 @@ function NavBar({ searchQuery, setSearchQuery }) {
                 <div className="max-w-7xl mx-auto flex items-center justify-between">
                     <div className="flex items-center space-x-8">
                         <Link to="/">
-                            <img src="/BJAJ.png" alt="Tickertape" className="h-12" />
+                            {/* <img src="/BJAJ.png" alt="Tickertape" className="h-12" /> */}
+                            <img src="/logopage.svg" alt="Tickertape" className="h-12" />
                         </Link>
                         <div className="relative hidden md:block">
                             <input

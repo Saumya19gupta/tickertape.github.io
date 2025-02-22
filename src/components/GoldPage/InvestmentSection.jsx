@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 // import creditSvg from "/src/img/credit.manage.svg";
 // import Goldwebp from "/src/img/Gold.webp";
-import img from "/src/img/Gold.webp"
+import img from "/src/img/part.jpeg"
+import safegold from "/src/img/safegold.webp"
+import vistra from "/src/img/vistra.webp"
+import brinks from "/src/img/brinks.webp"
 
 const InvestmentSection = () => {
   return (
@@ -63,15 +66,19 @@ const InvestmentSection = () => {
         >
           <div>
             <p className="text-gray-600 text-sm">In partnership with</p>
-            <img src="/safegold.png" alt="SafeGold" className="w-24 mt-1" />
+            {/* <img src="/safegold.png" alt="SafeGold" className="w-24 mt-1" /> */}
+
+            <img src = {safegold} alt = "Phone UI" className = "w-full drop-shadow-lg" />      
           </div>
           <div>
             <p className="text-gray-600 text-sm">Trustee partner</p>
-            <img src="/vistra.png" alt="Vistra" className="w-20 mt-1" />
+            {/* <img src="/vistra.png" alt="Vistra" className="w-20 mt-1" /> */}
+            <img src = {vistra} alt = "Phone UI" className = "w-full drop-shadow-lg" />   
           </div>
           <div>
             <p className="text-gray-600 text-sm">Insured and secured by</p>
-            <img src="/brinks.png" alt="Brinks" className="w-20 mt-1" />
+            {/* <img src="/brinks.png" alt="Brinks" className="w-20 mt-1" /> */}
+            <img src = {brinks} alt = "Phone UI" className = "w-full drop-shadow-lg" />   
           </div>
         </motion.div>
       </div>

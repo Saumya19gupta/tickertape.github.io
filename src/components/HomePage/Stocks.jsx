@@ -183,13 +183,13 @@ export default function Stock() {
   }, []);
 
   return (
-    <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="p-4 bg-white rounded-lg shadow">
+    <div className="container  mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="p-4 bg-gray-900 rounded-lg shadow">
         <div className="flex justify-center space-x-4 mb-4">
           {buttons.map((btn, index) => (
             <motion.button
               key={index}
-              className={`px-4 py-2 rounded ${activeTab.toLowerCase() === btn.toLowerCase() ? "bg-green-500 text-white" : "bg-gray-200"}`}
+              className={`px-4 py-2 rounded ${activeTab.toLowerCase() === btn.toLowerCase() ? "bg-green-500 text-black" : "bg-gray-200"}`}
               onClick={() => setActiveTab(btn.toLowerCase())}
               whileHover={{ scale: 1.1 }}
             >
@@ -218,7 +218,8 @@ export default function Stock() {
           ))}
         </div>
       </div>
-      <div className="p-4 bg-white rounded-lg shadow">
+      {/* <div className="p-4 bg-white rounded-lg shadow"> */}
+       <div className="p-4 bg-gray-900 rounded-lg shadow">
         <h2 className="text-lg font-semibold mb-4">Today's News and Events</h2>
         <div>
           {news.map((item, index) => (

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 
+import FooterSection from "/src/img/footer_section_img.png"
+
 const Basement = () => {
   return (
     <section className="bg-gray-900 text-white py-16 px-6">
@@ -13,9 +15,9 @@ const Basement = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-semibold text-blue-400 leading-tight">
+          <h1 className="text-6xl md:text-6xl font-semibold text-blue-400 leading-tight">
             Everything you need to redefine your investing experience
-          </h2>
+          </h1>
 
           <div className="mt-6 space-y-4 text-lg">
             <p><span className="font-semibold text-gray-300">Assets tracked worth:</span> <span className="text-white">60,500 Cr</span></p>
@@ -53,11 +55,13 @@ const Basement = () => {
           transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-          <img
+          {/* <img
             src="/assets/mobile-ui.png" 
             alt="Mobile UI"
             className="w-full max-w-sm md:max-w-md rounded-lg shadow-lg"
-          />
+          /> */}
+           <img src = {FooterSection} alt = "Phone UI" className = "w-full drop-shadow-lg" />   
+
         </motion.div>
       </div>
     </section>

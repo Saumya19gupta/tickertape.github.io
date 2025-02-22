@@ -112,6 +112,7 @@
 
 import React from "react";
 import { motion } from 'framer-motion';
+import Gold from "/src/img/Gold2.jpg"
 
 const GoldInvestment = () => {
   return (
@@ -146,7 +147,8 @@ const GoldInvestment = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.2 }}
             >
-              <img src={article.image} alt={article.title} className="w-full rounded-lg" />
+              {/* <img src={article.image} alt={article.title} className="w-full rounded-lg" /> */}
+              <img src = {Gold} alt = "Phone UI" className = "w-full drop-shadow-lg" />
               <h3 className="text-lg font-semibold mt-2">{article.title}</h3>
               <p className="text-gray-500 text-sm">{article.date} • {article.readTime} min read</p>
             </motion.div>
