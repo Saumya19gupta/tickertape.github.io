@@ -17,7 +17,7 @@ const ComparisonTable = () => {
     <div className="flex flex-col items-center justify-center p-6 bg-gray-100">
       {/* Heading */}
       <motion.h2 
-        className="text-2xl font-bold text-center mb-6 text-gray-800"
+        className="text-3xl font-bold text-center mb-6 text-gray-800"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
