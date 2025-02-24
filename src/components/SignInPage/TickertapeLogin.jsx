@@ -5,6 +5,7 @@
 // import Login from "/src/img/loginDweb.svg"
 // import Logopage from "/src/img/logoupdate.png"
 
+
 // // import img from "./src/img/loginDweb.svg";
 
 // // import img from "/src/img/loginDweb.svg"
@@ -110,6 +111,9 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+// import Login from "/src/img/loginDweb.svg";
+// import Logopage from "/src/img/logoupdate.png";
+
 import Login from "/src/img/loginDweb.svg";
 import Logopage from "/src/img/logoupdate.png";
 
@@ -131,7 +135,8 @@ export default function TickertapeLogin() {
       >
         {/* Left Side - App Promo */}
         <div className="w-full md:w-1/2 bg-gray-50 p-8 flex flex-col items-center justify-center text-center">
-          <img src={Login} alt="Phone UI" className="w-full drop-shadow-lg" />
+          {/* <img src={Login} alt="Phone UI" className="w-full drop-shadow-lg" /> */}
+          <img src = {Login} alt = "QR Code" className = "w-full drop-shadow-lg" />
           <h2 className="text-2xl font-bold text-gray-700">
             Redefine your <span className="text-blue-500">investing experience</span>
           </h2>
@@ -143,7 +148,8 @@ export default function TickertapeLogin() {
         {/* Right Side - Login Form */}
         <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-gray-700 flex items-center mb-2">
-            <img src={Logopage} alt="Tickertape Logo" className="w-32 mr-4" />
+            {/* <img src={Logopage} alt="Tickertape Logo" className="w-32 mr-4" /> */}
+            <img src = {Logopage} alt = "Tickertape Logo" className = "w-full drop-shadow-lg" />
           </h2>
           <p className="text-gray-500 text-sm mb-4">from smallcase</p>
 
